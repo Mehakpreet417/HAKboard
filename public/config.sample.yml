@@ -1,0 +1,40 @@
+config:
+  directions:
+    - start: 'Stamford CT'
+      end: 'Stamford Train Station, CT'
+      mode: 'walking'
+    - start: 'Stamford Train Station, CT'
+      end: 'Grand Central Terminal, NY'
+      mode: 'train'
+    - start: 'Grand Central Terminal, NY'
+      end: '45 E 25th St,NY 10022'
+      mode: 'walking'
+  widgets:
+    weather:
+      dark_sky_secret: 'ADD_API_KEY'
+      latitude: '50'
+      longitude: '-50'
+    clock:
+      type: '12'
+      show_seconds: true
+    calendar:
+      # Google calendar in settings public link
+      url: 'ICAL_URL'
+    todoist:
+      key: 'ADD_API_KEY'
+    traffic:
+      google_traffic_api_key: 'ADD_API_KEY'
+    tides:
+      world_tides_api_key: 'ADD_API_KEY'
+    rss:
+      url: 'https://www.goodnewsnetwork.org/category/news/feed/'
+    home_assistant:
+      url: 'https://YOUR_URL'
+      long_lived_access_token: 'ADD_API_KEY'
+      entities:
+        - lock.front_door_lock
+        - alarm_control_panel.home
+        - sensor.living_room_thermostat_temperature
+        - sensor.snug_sensor_temperature
+        - sensor.electricity_usage
+        
